@@ -54,3 +54,5 @@ O projeto utiliza o algoritmo Shunting Yard para converter expressões infixas e
 ## Autor
 
 Paulo André - [GitHub](https://github.com/pauloandrdev) 
+Pedro Alves de Souza - [Github]
+(https://github.com/PedroLiberati)
