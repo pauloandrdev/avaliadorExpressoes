@@ -6,7 +6,7 @@ int main() {
     Expressao exp;
 
     strcpy(exp.inFixa, "( 3 + 4 ) * 5");
-    strcpy(exp.posFixa, getFormaPosFixa(exp.inFixa));
+    strcpy(exp.posFixa, getFormaPosFixa(exp.inFixa)); // calcula o valor da expressao pos-fixa
     exp.Valor = getValorPosFixa(exp.posFixa);
 
     printf("Expressao infixa: %s\n", exp.inFixa);
