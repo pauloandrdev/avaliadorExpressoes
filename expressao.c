@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define _USE_MATH_DEFINES
+#define _USE_MATH_DEFINES 
 #include <math.h>
 #include <ctype.h>
-#include "expressao.h"
+#include "expressao.h"  
 
 #define MAX 512
 
-typedef struct {
+typedef struct { // estrutura de pilha para numeros float
     float items[MAX];
     int top;
 } PilhaFloat;
@@ -113,7 +113,7 @@ char *getFormaInFixa(char *Str) {
             sprintf(temp, "(%s %s %s)", a, tok, b);
             pushStr(&p, temp);
         }
-        tok = strtok(NULL, " ");
+        tok = strtok(NULL, " "); // proximo token
     }
     strcpy(res, topoStr(&p));
     return res;
